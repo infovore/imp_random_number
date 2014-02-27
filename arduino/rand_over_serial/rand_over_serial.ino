@@ -49,7 +49,6 @@ void loop() {
 void handleNumber() {
   
   char *arg;
-  int heading;
   arg = sCmd.next();    // Get the next argument from the SerialCommand object buffer
   if (arg != NULL)      // As long as it existed, take it
   {
