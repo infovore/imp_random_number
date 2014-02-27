@@ -3,7 +3,7 @@ device.on("getRand", function(d) {
    server.log("### I've been asked for a random number");
    
    // get a number from http
-   local url = "http://tomarmitage.com/tmp/rand.php";
+   local url = "http://example.com/rand.php";
    local request = http.get(url);
    local response = request.sendsync();
    local data = http.jsondecode(response.body);

@@ -17,7 +17,7 @@ getRandomNumber();
 function handleRandomNumber(data) {
   // send the random number as a uart message to our Arduino
   server.log("*** Sending arduino the random number " + data.number);
-  local string = "N " + data.number + "\r";
+  local string = "N " + data.number + "\r"; // SerialCommand expects carriage-return termination
   arduino.write(string);
 }
 
